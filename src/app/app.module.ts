@@ -6,6 +6,7 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { CuadroInfoComponent } from './cuadro-info/cuadro-info.component';
 import { AcordionComponent } from './acordion/acordion.component';
 import { EmergentesComponent } from './emergentes/emergentes.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -14,9 +15,11 @@ import { EmergentesComponent } from './emergentes/emergentes.component';
     CuadroInfoComponent,
     AcordionComponent,
     EmergentesComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

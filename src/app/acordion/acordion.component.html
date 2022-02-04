@@ -13,25 +13,25 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">En un </span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema1.Palabra1a">
                 <span class="input-group-text">de mi</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema1.Palabra1b">
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Vive mi propio</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema1.Palabra1c">
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">es azul,</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema1.Palabra1d">
                 <span class="input-group-text">, y me sonríe</span>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">con la</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema1.Palabra1e">
                 <span class="input-group-text">leve</span>
               </div>
 
@@ -68,14 +68,14 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Si me miro en tu </span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2a">
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Si soy la</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2b">
                 <span class="input-group-text">y el</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2c">
               </div>
 
               <div class="input-group mb-3">
@@ -84,9 +84,9 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Y tu</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2d">
                 <span class="input-group-text">es mi</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2e">
               </div>
 
               <div class="input-group mb-3">
@@ -94,7 +94,7 @@
               </div>
 
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2f">
               </div>
 
               <div class="input-group mb-3">
@@ -103,7 +103,7 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Confundo el</span>
-                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra">
+                <input type="text" class="form-control" placeholder="ingrese palabra" aria-label="ingrese palabra" [(ngModel)]="poema2.Palabra2g">
                 <span class="input-group-text">y la sombra</span>
               </div>
 
@@ -142,25 +142,25 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">En un </span>
-                <span class="input-group-text"> *Palabra1a </span>
+                <span class="input-group-text" [style.font-weight]="negrita" > {{poema1.Palabra1a}} </span>
                 <span class="input-group-text">de mi</span>
-                <span class="input-group-text"> *Palabra1b </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema1.Palabra1b}} </span>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Vive mi propio</span>
-                <span class="input-group-text"> *Palabra1c </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema1.Palabra1c}}</span>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">es azul,</span>
-                <span class="input-group-text"> *Palabra1d </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema1.Palabra1d}} </span>
                 <span class="input-group-text">, y me sonríe</span>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">con la</span>
-                <span class="input-group-text"> *Palabra1e </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema1.Palabra1e}}</span>
                 <span class="input-group-text">leve</span>
               </div>
 
@@ -200,14 +200,14 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Si me miro en tu </span>
-                <span class="input-group-text"> *Palabra2a </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2a}} </span>
               </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Si soy la</span>
-                <span class="input-group-text"> *Palabra2b </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2b}} </span>
                 <span class="input-group-text">y el</span>
-                <span class="input-group-text"> *Palabra2c </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2c}} </span>
               </div>
 
               <div class="input-group mb-3">
@@ -216,9 +216,9 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Y tu</span>
-                <span class="input-group-text"> *Palabra2d </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2d}} </span>
                 <span class="input-group-text">es mi</span>
-                <span class="input-group-text"> *Palabra2e </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2e}} </span>
               </div>
 
               <div class="input-group mb-3">
@@ -226,7 +226,7 @@
               </div>
 
               <div class="input-group mb-3">
-                <span class="input-group-text"> *Palabra2f </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2f}} </span>
               </div>
 
               <div class="input-group mb-3">
@@ -235,7 +235,7 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text">Confundo el</span>
-                <span class="input-group-text"> *Palabra2g </span>
+                <span class="input-group-text" [style.font-weight]="negrita"> {{poema2.Palabra2g}} </span>
                 <span class="input-group-text">y la sombra</span>
               </div>
 
