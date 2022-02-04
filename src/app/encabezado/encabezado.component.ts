@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncabezadoComponent implements OnInit {
 
+  tituloPagina = 'Poesía digital';
+  nombre1 = 'Amairani Aguilar';
+  nombre2 = 'Juan Francisco Carrillo';
+  nombre3 = 'Andrés Fonseca';
+
   constructor() { }
 
   ngOnInit(): void {
