@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CuadroInfoComponent implements OnInit {
 
+  negrita = 'bold';
+  inclinada = 'oblique';
+
   constructor() { }
 
   ngOnInit(): void {

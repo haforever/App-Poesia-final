@@ -11,6 +11,7 @@ export class EncabezadoComponent implements OnInit {
   nombre1 = 'Amairani Aguilar';
   nombre2 = 'Juan Francisco Carrillo';
   nombre3 = 'Andrés Fonseca';
+  negrita = 'bold';
 
   constructor() { }
 
